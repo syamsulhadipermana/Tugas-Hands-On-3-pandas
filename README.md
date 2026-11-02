@@ -23,15 +23,21 @@
 - Scikit-learn untuk pemodelan dan evaluasi klasifikasi.
 
 ## Struktur Repository
+```text
 tugas-hands-on-3/
+│
 ├── README.md
 ├── notebook.ipynb
+│
 ├── data/
 │   └── case2_customer_churn.csv
+│
 ├── output/
 │   ├── data_bersih.csv
 │   └── kamus_data.csv
+│
 └── laporan_kualitas.csv
+```
 
 ## Tahapan Pengerjaan
 - Memuat dan mengeksplorasi dataset.
