@@ -14,6 +14,42 @@
 - `output/kamus_data.csv` — kamus data berisi nama kolom, tipe data, missing value, jumlah nilai unik, dan keterangan.
 - `laporan_kualitas.csv` — ringkasan kualitas data sebelum dan sesudah pembersihan.
 
+## Tools dan Library
+- Google Colab sebagai lingkungan pengembangan dan eksekusi kode.
+- Python sebagai bahasa pemrograman.
+- Pandas untuk manipulasi dan pengolahan data.
+- NumPy untuk komputasi numerik.
+- Matplotlib dan Seaborn untuk visualisasi data.
+- Scikit-learn untuk pemodelan dan evaluasi klasifikasi.
+
+## Struktur Repository
+tugas-hands-on-3/
+├── README.md
+├── notebook.ipynb
+├── data/
+│   └── case2_customer_churn.csv
+├── output/
+│   ├── data_bersih.csv
+│   └── kamus_data.csv
+└── laporan_kualitas.csv
+
+## Tahapan Pengerjaan
+- Memuat dan mengeksplorasi dataset.
+- Memeriksa kualitas dan karakteristik data.
+- Menangani missing values.
+- Memeriksa dan menangani data duplikat.
+- Mendeteksi dan menangani outlier.
+- Melakukan analisis dan visualisasi data.
+- Membangun serta mengevaluasi model klasifikasi.
+
+## Temuan Utama
+- Total dataset terdiri dari 5.000 data pelanggan.
+- Tingkat churn keseluruhan sebesar 43,62%.
+- Pelanggan dengan kontrak bulanan memiliki tingkat churn sebesar 58,39%.
+- Pelanggan dengan 12–15 keluhan memiliki tingkat churn sebesar 56,97%.
+- Missing values berhasil ditangani sehingga jumlahnya menjadi 0.
+- Tidak ditemukan data duplikat berdasarkan ID pelanggan.
+
 ## Ringkasan hasil
 - Data awal memiliki 5.000 baris dan 12 kolom.
 - Tidak ditemukan duplikat berdasarkan `customer_id`.
@@ -25,19 +61,12 @@
 - Model baseline Logistic Regression dengan split 80:20 menghasilkan accuracy 0,644 dan F1 kelas Churn sekitar 0,546 pada eksekusi ini. Hasil ini adalah baseline, bukan klaim model terbaik.
 
 ## Cara menjalankan
-1. Pastikan Python 3.10+ tersedia.
-2. Instal dependensi:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-   ```
-3. Buka terminal pada folder `tugas-hands-on-3`.
-4. Jalankan:
-   ```bash
-   jupyter notebook
-   ```
-5. Buka `notebook.ipynb`, lalu pilih **Restart Kernel and Run All**.
-
-Notebook menggunakan jalur relatif, sehingga sebaiknya dijalankan dari folder utama `tugas-hands-on-3`.
+- Buka Google Colab melalui https://colab.research.google.com/.
+- Pilih menu File → Upload notebook.
+- Unggah file notebook.ipynb.
+- Unggah dataset asli sesuai struktur folder yang digunakan dalam notebook.
+- Sesuaikan lokasi file jika diperlukan.
+- Jalankan seluruh cell secara berurutan menggunakan Runtime → Run all.
 
 ## Catatan metodologi
 - Missing numerik diisi median dan missing kategorik diisi modus untuk menghasilkan CSV bersih.
