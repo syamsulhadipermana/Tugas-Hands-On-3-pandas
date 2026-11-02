@@ -1,0 +1,13 @@
+kolom,tipe_data,n_missing,n_unik,keterangan
+customer_id,string,0,5000,ID unik pelanggan; tidak digunakan sebagai fitur model
+lama_berlangganan_bulan,int64,0,72,Lama pelanggan berlangganan dalam bulan
+jenis_kontrak,category,0,3,Jenis kontrak berlangganan
+tagihan_bulanan_idr,float64,0,4822,Tagihan bulanan dalam Rupiah
+total_tagihan_idr,float64,0,4665,Total tagihan dalam Rupiah
+layanan_internet,category,0,3,Jenis layanan internet
+jumlah_layanan_aktif,int64,0,8,Jumlah layanan aktif
+dukungan_teknis,category,0,2,Status penggunaan dukungan teknis
+jumlah_komplain,int64,0,16,Jumlah komplain pelanggan
+hari_sejak_interaksi_terakhir,int64,0,366,Hari sejak interaksi terakhir
+metode_pembayaran,category,0,4,Metode pembayaran
+status_pelanggan,category,0,2,Target klasifikasi: Aktif atau Churn

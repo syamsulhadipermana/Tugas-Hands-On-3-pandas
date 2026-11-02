@@ -1,0 +1,5 @@
+metrik,sebelum,sesudah
+n_baris,5000,5000
+n_duplikat_customer_id,0,0
+n_missing,1638,0
+n_outlier_total,55,0
